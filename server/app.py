@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = '/home/sree/Desktop/fileupload/uploads'
+UPLOAD_FOLDER = os.path.join(os.getcwd(), "uploads")
 SCRIPT_FILE = os.path.join(UPLOAD_FOLDER, 'script.txt')
 
 # Ensure uploads folder exists
